@@ -19,8 +19,9 @@ class ModelSummary:
     def __init__(self, model_prefix, epoch):
         self.model_prefix = model_prefix
         self.epoch = epoch
-        self.symbol, self.arg_params, self.aux_params = mx.model.load_checkpoint(
-            model_prefix, epoch)
+        self.symbol = mx.model.load_checkpoint(model_prefix, epoch)[0]
+        self.arg_params = mx.model.load_checkpoint(model_prefix, epoch)[1]
+        self.aux_params = mx.model.load_checkpoint(model_prefix, epoch)[2]
 
     def plot(self, type='pdf', shape=None):
         """
@@ -82,7 +83,12 @@ class ModelSummary:
                 self.get_layer_names()))
 
         if layer_type == 'all':
-            return batchnorm_layer_name, convolution_layer_name, reLu_layer_name, fc_layer_name
+            result = []
+            result.append(batchnorm_layer_name)
+            result.append(convolution_layer_name)
+            result.append(reLu_layer_name)
+            result.append(fc_layer_name)
+            return result
         elif layer_type in ('batchnorm', 'bn', 'Batchnorm'):
             return batchnorm_layer_name
         elif layer_type in ('convolution', 'conv', 'Convolution'):

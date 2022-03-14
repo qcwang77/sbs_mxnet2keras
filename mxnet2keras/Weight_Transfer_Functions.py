@@ -85,8 +85,8 @@ def transfer_conv_weight(keras_net, layer_name, arg_params):
 
     for i in range(shape1):
         for j in range(shape2):
-            for l in range(shape3):
-                for k in range(shape4):
-                    keras_weight[l, k, j, i] = mxnet_weight[i, j, l, k]
+            for p in range(shape3):
+                for q in range(shape4):
+                    keras_weight[p, q, j, i] = mxnet_weight[i, j, p, q]
 
     keras_layer.set_weights([keras_weight, keras_bias])

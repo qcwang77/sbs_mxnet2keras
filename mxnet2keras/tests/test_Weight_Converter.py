@@ -9,13 +9,15 @@ from build_net_for_test import build_net
 
 data_path = os.path.join(mxnet2keras.__path__[0], 'data')
 
+
 class TestModelWeightConverter(unittest.TestCase):
     """
     Test cases for the class WeightConverter
     """
     def setUp(self):
         test_model = build_net()
-        self.loadweight = WeightConvert(os.path.join(data_path, 'cnocr-v1.2.0-conv-lite-fc'), 25, test_model)
+        self.loadweight = WeightConvert(os.path.join(
+            data_path, 'cnocr-v1.2.0-conv-lite-fc'), 25, test_model)
 
     def test_load_single_weight(self):
         """

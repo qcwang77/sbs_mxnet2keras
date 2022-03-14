@@ -3,13 +3,15 @@ build a corresponding keras model architecture.
 Helper function for test_Weight_Converter.py
 """
 import keras
-from keras.layers import Conv2D, MaxPool2D, BatchNormalization, Lambda, Dense, LeakyReLU, Dropout, Activation, Add
+from keras.layers import Conv2D, MaxPool2D, BatchNormalization, Lambda
+from keras.layers import Dense, LeakyReLU, Dropout, Activation, Add
 from keras.activations import relu, softmax
+
 
 def build_net():
     """
     build a corresponding keras model architecture for testing purpose
-    :return model: keras model that follows the example mxnet model architecture
+    :return model: keras model that follows the mxnet model architecture
     """
 
     input_data = keras.layers.Input(shape=(32, 1000, 1))
