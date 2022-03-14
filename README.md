@@ -51,10 +51,10 @@ This will generate the pip installation package `mxnet2keras-0.0.1.tar.gz` in th
 The package `mxnet2keras` can now be installed using
 
 ```bash
-pipinstall ./dist/mxnet2keras-0.0.1.tar.gz
+pipi nstall ./dist/mxnet2keras-0.0.1.tar.gz
 ```
 
 ## Usage
 
 To see how to use the package to visualize model and convert model weight, 
-refer to the [example notebook](example/example.ipynb)
+refer to the [example notebook](mxnet2keras/example/example.ipynb)
