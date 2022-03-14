@@ -20,15 +20,6 @@ class TestModelSummary(unittest.TestCase):
         self.ocr_model = ModelSummary(
             os.path.join(data_path, 'cnocr-v1.2.0-conv-lite-fc'), 25)
 
-    def test_plot_sum(self):
-        """
-        Test case for the function plot() and sum().
-        Test if the graphical visualization is generated.
-        """
-        self.ocr_model.summary()
-        self.ocr_model.plot('pdf')
-        self.assertTrue(os.path.isfile('./graph.pdf'))
-
     def test_get_layer_names(self):
         """
         Test case for the function get_layer_names().
@@ -45,6 +36,13 @@ class TestModelSummary(unittest.TestCase):
         self.assertEqual(len(self.ocr_model.filtered_layer_names()[1]), 13)
         self.assertEqual(len(self.ocr_model.filtered_layer_names()[2]), 0)
         self.assertEqual(len(self.ocr_model.filtered_layer_names()[3]), 2)
+
+    def test_summary(self):
+        """
+        Test case for the function and sum().
+        Test if the summary is printed and not generating outputs.
+        """
+        self.assertIsNone(self.ocr_model.summary())
 
 
 if __name__ == '__main__':

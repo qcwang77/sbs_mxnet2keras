@@ -5,7 +5,7 @@ import unittest
 import os.path
 import mxnet2keras
 from mxnet2keras.Weight_Converter import WeightConvert
-from build_net_for_test import build_net
+from mxnet2keras.tests.build_net_for_test import build_net
 
 data_path = os.path.join(mxnet2keras.__path__[0], 'data')
 
