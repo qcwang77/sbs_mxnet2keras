@@ -32,11 +32,11 @@ class WeightConvert:
                 layer_name,
                 self.arg_params,
                 self.aux_params)
-        elif layer_name in self.convolution_layer_name:
+        elif layer_name in self.conv:
             transfer_conv_weight(self.keras_net, layer_name, self.arg_params)
-        elif layer_name in self.reLu_layer_name:
+        elif layer_name in self.reLu:
             transfer_relu_weight(self.keras_net, layer_name, self.arg_params)
-        elif layer_name in self.fc_layer_name:
+        elif layer_name in self.fc:
             transfer_fc_weight(self.keras_net, layer_name, self.arg_params)
         else:
             print('Please Check the layer name!')
