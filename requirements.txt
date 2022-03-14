@@ -5,6 +5,5 @@ idna==2.6
 keras==2.8.0
 mxnet==1.7.0.post2
 numpy==1.16.6
-requests==2.18.4
 urllib3==1.22
 wincertstore==0.2
