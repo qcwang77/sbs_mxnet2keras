@@ -1,0 +1,138 @@
+digraph plot {
+	data [label=data fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	"conv-0" [label="Convolution
+3x3/1, 64" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-0" [label="batchnorm-0" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-0" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-1" [label="Convolution
+3x3/1, 128" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-1" [label="batchnorm-1" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-1" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"pool-0" [label="Pooling
+max, 2x2/2x2" fillcolor="#80b1d3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-2" [label="Convolution
+3x3/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-2" [label="batchnorm-2" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-2" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-3" [label="Convolution
+3x3/1, 512" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-3" [label="batchnorm-3" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-3" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"pool-1" [label="Pooling
+max, 2x2/2x2" fillcolor="#80b1d3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-4-1-1x1" [label="Convolution
+1x1/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-4-1" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-4" [label="Convolution
+3x3/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-4-2" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-4-2-1x1" [label="Convolution
+1x1/1, 512" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-4" [label="batchnorm-4" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-4" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-5-1-1x1" [label="Convolution
+1x1/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-5-1" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-5" [label="Convolution
+3x3/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-5-2" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-5-2-1x1" [label="Convolution
+1x1/1, 512" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-5" [label="batchnorm-5" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-5" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	_plus0 [label=_plus0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"pool-2" [label="Pooling
+max, 2x2/2x1" fillcolor="#80b1d3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-6-1-1x1" [label="Convolution
+1x1/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-6-1" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-6" [label="Convolution
+4x1/1, 256" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-6-2" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-6-2-1x1" [label="Convolution
+1x1/1, 512" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"batchnorm-6" [label="batchnorm-6" fillcolor="#bebada" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"leakyrelu-6" [label="LeakyReLU
+Leaky" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	dropout0 [label=dropout0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	squeeze0 [label=squeeze0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	transpose0 [label=transpose0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"seq-fc" [label="FullyConnected
+128" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"seq-relu" [label="Activation
+relu" fillcolor="#ffffb3" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	reshape0 [label=reshape0 fillcolor="#fdb462" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	pred_fc [label="FullyConnected
+6426" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	softmaxactivation0 [label=softmaxactivation0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	makeloss1 [label=makeloss1 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	blockgrad0 [label=blockgrad0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	reshape1 [label=reshape1 fillcolor="#fdb462" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	label [label=label fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	ctc_loss0 [label=ctc_loss0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	makeloss0 [label=makeloss0 fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	"conv-0" -> data [label="" arrowtail=open dir=back]
+	"batchnorm-0" -> "conv-0" [label="" arrowtail=open dir=back]
+	"leakyrelu-0" -> "batchnorm-0" [label="" arrowtail=open dir=back]
+	"conv-1" -> "leakyrelu-0" [label="" arrowtail=open dir=back]
+	"batchnorm-1" -> "conv-1" [label="" arrowtail=open dir=back]
+	"leakyrelu-1" -> "batchnorm-1" [label="" arrowtail=open dir=back]
+	"pool-0" -> "leakyrelu-1" [label="" arrowtail=open dir=back]
+	"conv-2" -> "pool-0" [label="" arrowtail=open dir=back]
+	"batchnorm-2" -> "conv-2" [label="" arrowtail=open dir=back]
+	"leakyrelu-2" -> "batchnorm-2" [label="" arrowtail=open dir=back]
+	"conv-3" -> "leakyrelu-2" [label="" arrowtail=open dir=back]
+	"batchnorm-3" -> "conv-3" [label="" arrowtail=open dir=back]
+	"leakyrelu-3" -> "batchnorm-3" [label="" arrowtail=open dir=back]
+	"pool-1" -> "leakyrelu-3" [label="" arrowtail=open dir=back]
+	"conv-4-1-1x1" -> "pool-1" [label="" arrowtail=open dir=back]
+	"leakyrelu-4-1" -> "conv-4-1-1x1" [label="" arrowtail=open dir=back]
+	"conv-4" -> "leakyrelu-4-1" [label="" arrowtail=open dir=back]
+	"leakyrelu-4-2" -> "conv-4" [label="" arrowtail=open dir=back]
+	"conv-4-2-1x1" -> "leakyrelu-4-2" [label="" arrowtail=open dir=back]
+	"batchnorm-4" -> "conv-4-2-1x1" [label="" arrowtail=open dir=back]
+	"leakyrelu-4" -> "batchnorm-4" [label="" arrowtail=open dir=back]
+	"conv-5-1-1x1" -> "leakyrelu-4" [label="" arrowtail=open dir=back]
+	"leakyrelu-5-1" -> "conv-5-1-1x1" [label="" arrowtail=open dir=back]
+	"conv-5" -> "leakyrelu-5-1" [label="" arrowtail=open dir=back]
+	"leakyrelu-5-2" -> "conv-5" [label="" arrowtail=open dir=back]
+	"conv-5-2-1x1" -> "leakyrelu-5-2" [label="" arrowtail=open dir=back]
+	"batchnorm-5" -> "conv-5-2-1x1" [label="" arrowtail=open dir=back]
+	"leakyrelu-5" -> "batchnorm-5" [label="" arrowtail=open dir=back]
+	_plus0 -> "leakyrelu-5" [label="" arrowtail=open dir=back]
+	_plus0 -> "pool-1" [label="" arrowtail=open dir=back]
+	"pool-2" -> _plus0 [label="" arrowtail=open dir=back]
+	"conv-6-1-1x1" -> "pool-2" [label="" arrowtail=open dir=back]
+	"leakyrelu-6-1" -> "conv-6-1-1x1" [label="" arrowtail=open dir=back]
+	"conv-6" -> "leakyrelu-6-1" [label="" arrowtail=open dir=back]
+	"leakyrelu-6-2" -> "conv-6" [label="" arrowtail=open dir=back]
+	"conv-6-2-1x1" -> "leakyrelu-6-2" [label="" arrowtail=open dir=back]
+	"batchnorm-6" -> "conv-6-2-1x1" [label="" arrowtail=open dir=back]
+	"leakyrelu-6" -> "batchnorm-6" [label="" arrowtail=open dir=back]
+	dropout0 -> "leakyrelu-6" [label="" arrowtail=open dir=back]
+	squeeze0 -> dropout0 [label="" arrowtail=open dir=back]
+	transpose0 -> squeeze0 [label="" arrowtail=open dir=back]
+	"seq-fc" -> transpose0 [label="" arrowtail=open dir=back]
+	"seq-relu" -> "seq-fc" [label="" arrowtail=open dir=back]
+	reshape0 -> "seq-relu" [label="" arrowtail=open dir=back]
+	pred_fc -> reshape0 [label="" arrowtail=open dir=back]
+	softmaxactivation0 -> pred_fc [label="" arrowtail=open dir=back]
+	makeloss1 -> softmaxactivation0 [label="" arrowtail=open dir=back]
+	blockgrad0 -> makeloss1 [label="" arrowtail=open dir=back]
+	reshape1 -> pred_fc [label="" arrowtail=open dir=back]
+	ctc_loss0 -> reshape1 [label="" arrowtail=open dir=back]
+	ctc_loss0 -> label [label="" arrowtail=open dir=back]
+	makeloss0 -> ctc_loss0 [label="" arrowtail=open dir=back]
+}
