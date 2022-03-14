@@ -18,11 +18,11 @@ sbs-mxnet2keras/
       |- test_Weight_Converter.py
       |- test_Model_Summary.py
       |- build_net_for_test.py
-  |- data/
-    |- cnocr-v1.2.0-conv-lite-fc-0025.params
-    |- cnocr-v1.2.0-conv-lite-fc-symbol.json
-  |-example/
-    |-example.ipynb
+    |- data/
+      |- cnocr-v1.2.0-conv-lite-fc-0025.params
+      |- cnocr-v1.2.0-conv-lite-fc-symbol.json
+    |-example/
+      |-example.ipynb
   |- setup.py
   |- requirements.txt
   |- LICENSE
