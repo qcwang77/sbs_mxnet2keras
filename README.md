@@ -28,6 +28,10 @@ sbs-mxnet2keras/
   |- LICENSE
 ```
 ---
+## Dependencies
+
+To check the dependencies of this package,
+refer to the [requirements](/requirements.txt)
 
 ## Installation
 
